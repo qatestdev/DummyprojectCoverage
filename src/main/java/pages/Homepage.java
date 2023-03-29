@@ -66,7 +66,6 @@ public class Homepage extends BasePage {
     private static final String REQUEST_DEMO_BTN = "request_demo";
 
 
-
     public Homepage(RemoteWebDriver driver, Environment env) {
         super(driver, env);
     }
@@ -137,7 +136,7 @@ public class Homepage extends BasePage {
     }
 
 
-    public void trackProjectQuality(){
+    public void trackProjectQuality() {
         getElementWhenVisible(By.id(TRACK_PROJECT_QUALITY_CONTAINER)).isDisplayed();
 //        getElementWhenVisible(By.id(LEARN_MORE_BTN_QUALITY_CONTAINER)).isDisplayed(); VALIDAR PQ ESTE ID ESTÁ SP A MUDAR
 
@@ -157,7 +156,7 @@ public class Homepage extends BasePage {
         getElementWhenVisible(By.id(REQUEST_DEMO_BTN)).isDisplayed();
     }
 
-    public void selectTryForFree () {
+    public void selectTryForFree() {
         getElementWhenVisible(By.id(NAVBAR)).isDisplayed();
         getElementWhenVisible(By.id(NAVBAR_TRY_FOR_FREE_LINK)).isDisplayed();
         getElementWhenVisible(By.id(NAVBAR_TRY_FOR_FREE_LINK)).click();
