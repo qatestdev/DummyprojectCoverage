@@ -18,5 +18,6 @@ public abstract class BasePage extends Fragment {
         this.driver = driver;
         PageFactory.initElements(driver, this);
         this.wait = new WebDriverWait(driver, 10);
+        this.wait = new WebDriverWait(driver, 10);
     }
 }
