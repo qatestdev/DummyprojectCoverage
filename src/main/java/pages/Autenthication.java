@@ -40,32 +40,6 @@ public class Autenthication extends BasePage {
         super(driver, env);
     }
 
-
-    public void loginwithGoogle()
-
-    {
-        System.out.println("Test Is Starting");
-
-        getElementWhenVisible(By.id(NAV_BAR_LOGIN_LINK)).isDisplayed();
-        getElementWhenVisible(By.id(NAV_BAR_LOGIN_LINK)).click();
-        // getElementWhenVisible(By.id(VALIDATE_LOGIN_PAGE)).isDisplayed();
-        getElementWhenVisible(By.id(GOOGLE_BUTTON)).isDisplayed();
-        getElementWhenVisible(By.id(GOOGLE_BUTTON)).click();
-        getElementWhenVisible(By.id(SELECT_USER_NAME)).click();
-        getElementWhenVisible(By.id(SELECT_USER_NAME)).sendKeys(env.username());
-        getElementWhenVisible(By.id(NEXT_BTN)).click();
-        getElementWhenVisible(By.xpath(SELECT_PASSWORD_TXT)).isDisplayed();
-       // elementNotPresent(By.xpath(TESTE));
-        wait.until(ExpectedConditions.invisibilityOfElementLocated((By.xpath("//*[@class='ANuIbb IdAqtf']"))));
-        getElementWhenVisible(By.xpath(SELECT_PASSWORD_TXT)).click();
-        getElementWhenVisible(By.xpath(SELECT_PASSWORD_TXT)).sendKeys(env.password());
-        getElementWhenVisible(By.id(PASSWORD_NEXT_BTN)).isDisplayed();
-        //elementNotPresent(By.xpath(ELEMENT1)).
-        getElementWhenVisible(By.id(PASSWORD_NEXT_BTN)).click();
-
-    }
-
-
     public void loginWithBitbucket() {
         getElementWhenVisible(By.id(NAV_BAR_LOGIN_LINK)).isDisplayed();
         getElementWhenVisible(By.id(NAV_BAR_LOGIN_LINK)).click();
