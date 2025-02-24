@@ -40,7 +40,6 @@ public class Autenthication extends BasePage {
         super(driver, env);
     }
 
-
     public void loginWithBitbucket() {
         getElementWhenVisible(By.id(NAV_BAR_LOGIN_LINK)).isDisplayed();
         getElementWhenVisible(By.id(NAV_BAR_LOGIN_LINK)).click();
