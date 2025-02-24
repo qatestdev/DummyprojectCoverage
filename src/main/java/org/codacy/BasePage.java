@@ -20,4 +20,5 @@ public abstract class BasePage extends Fragment {
         this.wait = new WebDriverWait(driver, 10);
         this.wait = new WebDriverWait(driver, 10);
     }
+    
 }
